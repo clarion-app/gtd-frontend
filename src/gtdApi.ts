@@ -1,4 +1,5 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
+import baseQuery from './baseQuery';
 import { backend } from '.';
 
 export interface ActionType {
@@ -24,13 +25,9 @@ export interface ContextType {
   description?: string;
 }
 
-const baseQuery = fetchBaseQuery({
-  baseUrl: `${backend.url}/api/gtd`,
-});
-
 export const gtdApi = createApi({
-  reducerPath: 'gtdApi',
-  baseQuery,
+  reducerPath: 'clarion-app-gtdApi',
+  baseQuery: baseQuery(),
   tagTypes: ['Action', 'Project', 'Context'],
   endpoints: (builder) => ({
     // Actions

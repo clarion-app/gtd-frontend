@@ -1,6 +1,6 @@
 {
   "name": "@clarion-app/gtd-frontend",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A React frontend for the GTD application",
   "main": "dist/index.js",
   "scripts": {

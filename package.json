@@ -1,31 +1,32 @@
 {
-    "name": "@clarion-app/gtd-frontend",
-    "version": "1.0.0",
-    "description": "A React frontend for the GTD application",
-    "main": "dist/index.js",
-    "scripts": {
-      "build": "rm -rf dist && tsc"
-    },
-    "repository": {
-      "type": "git",
-      "url": "git+https://github.com/clarion-app/gtd-frontend.git"
-    },
-    "author": "Tim Schwartz <tim@metaverse.systems>",
-    "license": "MIT",
-    "dependencies": {
-      "@clarion-app/types": "^1.0.3",
-      "@reduxjs/toolkit": "^1.9.5",
-      "react": "^18.2.0",
-      "react-dom": "^18.2.0",
-      "react-redux": "^8.0.5",
-      "react-router-dom": "^6.4.1",
-      "typescript": "^4.8.4"
-    },
-    "devDependencies": {
-      "@types/react": "^18.0.21",
-      "@types/react-dom": "^18.0.6"
-    },
-    "customFields": {
+  "name": "@clarion-app/gtd-frontend",
+  "version": "1.0.1",
+  "description": "A React frontend for the GTD application",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "rm -rf dist && tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clarion-app/gtd-frontend.git"
+  },
+  "author": "Tim Schwartz <tim@metaverse.systems>",
+  "license": "MIT",
+  "dependencies": {
+    "@clarion-app/types": "^1.0.3",
+    "@reduxjs/toolkit": "^1.9.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-redux": "^8.0.5",
+    "react-router-dom": "^6.4.1",
+    "typescript": "^4.8.4"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.21",
+    "@types/react-dom": "^18.0.6"
+  },
+  "customFields": {
+    "clarion": {
       "initializer": "initializeGtdFrontend",
       "api": "gtdFrontendApi",
       "routes": [
@@ -73,4 +74,4 @@
       }
     }
   }
-  
+}

@@ -20,7 +20,10 @@ const Projects = () => {
   };
 
   if (isLoading) return <div>Loading...</div>;
-  if (error) return <div>Error: {error.toString()}</div>;
+  if (error) {
+    console.log(error.toString());
+    return <div>Error: {error.toString()}</div>;
+  }
 
   return (
     <div>

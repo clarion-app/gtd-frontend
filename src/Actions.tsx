@@ -24,7 +24,7 @@ const Actions = () => {
 
   return (
     <div>
-      <h1>Actions</h1>
+      <h1 className="title">Getting Things Done - Actions</h1>
       <form onSubmit={handleCreateAction} className="mb-4">
         <input
           type="text"

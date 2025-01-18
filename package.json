@@ -1,6 +1,6 @@
 {
   "name": "@clarion-app/gtd-frontend",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A React frontend for the GTD application",
   "main": "dist/index.js",
   "scripts": {
@@ -13,7 +13,7 @@
   "author": "Tim Schwartz <tim@metaverse.systems>",
   "license": "MIT",
   "dependencies": {
-    "@clarion-app/types": "^1.0.3",
+    "@clarion-app/types": "^1.2.0",
     "@reduxjs/toolkit": "^1.9.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

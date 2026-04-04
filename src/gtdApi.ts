@@ -1,5 +1,6 @@
 import { createApi } from '@reduxjs/toolkit/query/react';
-import baseQuery from './baseQuery';
+import { createBaseQuery } from '@clarion-app/frontend-base';
+import { backend } from './config';
 
 export interface ActionType {
   id: string;
@@ -26,7 +27,7 @@ export interface ContextType {
 
 export const gtdApi = createApi({
   reducerPath: 'clarion-app-gtdApi',
-  baseQuery: baseQuery(),
+  baseQuery: createBaseQuery({ routePrefix: '/api/clarion-app/gtd', backendConfig: backend }),
   tagTypes: ['Action', 'Project', 'Context'],
   endpoints: (builder) => ({
     // Actions

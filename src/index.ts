@@ -1,4 +1,3 @@
-import { BackendType } from "@clarion-app/types";
 import { gtdApi as gtdFrontendApi } from "./gtdApi";
 import Actions from "./Actions";
 import Action from "./Action";
@@ -7,12 +6,7 @@ import Project from "./Project";
 import Contexts from "./Contexts";
 import Context from "./Context";
 
-export const backend: BackendType = { url: "http://localhost:8000", user: { id: "", name: "", email: "" } };
-
-export const updateFrontend = (config: BackendType) => {
-  backend.url = config.url;
-  backend.user = config.user;
-};
+export { backend, updateFrontend } from './config';
 
 export {
   gtdFrontendApi,
